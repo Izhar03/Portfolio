@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izhar Ahmad - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Izhar Ahmad</h1>
+            <ul>
+                <li><button onclick="scrollToSection('home')">Home</button></li>
+                <li><button onclick="scrollToSection('work')">Work</button></li>
+                <li><button onclick="scrollToSection('projects')">Projects</button></li>
+                <li><button onclick="scrollToSection('publications')">Publications</button></li>
+                <li><button onclick="scrollToSection('articles')">Articles</button></li>
+            </ul>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <div class="home-content">
+                <div>
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-XB7siPXXKHfRdUtVoBQbcgiXaWZO1M.PNG" alt="Izhar Ahmad">
+                </div>
+                <div>
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>Hey, my name is Izhar Ahmad Hamdan. I'm a final-year student at Maharaja Surajmal Institute of Technology, where I'm pursuing my passion for technology and innovation. My journey revolves around learning and building meaningful products, especially in the fields of AI, product development, and engineering.</p> <p>Besides academics, I'm a writer at heart and love to express my thoughts through fashion articles. Whether it’s decoding fashion trends or decoding runway shows, I enjoy sharing these insights with my readers. I also find time to stay active through sports, with a particular fondness for badminton.</p> <p>Recently, I've been diving deeper into backend development and cloud technologies, continuously sharpening my skills in these domains. Solving complex problems and working on cutting-edge research, especially in AI and healthcare, keeps me excited about the future.</p> <p>Feel free to reach out to me at izharhamdan [at] gmail [dot] com. I’m always up for a good conversation or collaboration!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Work Experience</h2>
+            <div>
+                <h3>Research Intern</h3>
+                <p>University of Wolverhampton · Apr 2024 - Sep 2024 · 6 mos</p>
+                <p>Presented research on "PDT ML for Personalised Healthcare & Ethical Implications with Generative AI" at Health Marketing International Day in Paris.</p>
+            </div>
+            <div>
+                <h3>Founding Product Engineer</h3>
+                <p>Stealth Mode AI Startup · Aug 2024 - Present · 2 mos</p>
+                <p>Jumping between Product and Engineering, developed WhatsApp affiliate-bot serving real user needs.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <h3>SpaceRouting AI</h3>
+                <p>Spatialroute.AI - Improving Spatial Awareness using Generative AI. An interactive web-based application designed to help users improve their spatial memory within the city of Delhi.</p>
+                <p>Utilizing Groq-API and <strong>Llama3-8b-8192</strong>, featuring an AI-driven hint system and dynamic scoring to personalize and enhance user interactions</p>
+                <p>Implemented a robust backend using <strong>Node.js and Express</strong>, incorporating <strong>JWT</strong> for secure session management and <strong>bcrypt.js</strong> for advanced password encryption</p>
+                <p>Managed and optimized a <strong>PostgreSQL</strong> database for efficiently handling and storing spatial and user data.</p>
+                <a href="https://github.com/Izhar03/Spatialrouting.AI">GitHub Repository</a>
+            </div>
+            <div>
+                <h3>Murmur Bot</h3>
+                <p>Developed an asynchronous WhatsApp bot integrating Perplexity and Groq APIs (llama-3b-8192) to deliver product recommendations.</p>
+                <p>Implemented data management using SQLite with aiosqlite for asynchronous querying, and deployed the application on Oracle Cloud.</p>
+                <p>Leveraged asyncio and messaging queues to enable concurrent interactions within WhatsApp groups, efficiently managing over <strong>200+ users</strong> per group with a total processing latency of 10 seconds.</p>
+                <p>Utilized Selenium for automating WhatsApp Web interactions, ensuring seamless message handling and user engagement.</p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <div>
+                <h3>Machine learning models for personalised healthcare on marketable generative-AI with ethical implications</h3>
+                <a href="https://wjarr.com/content/machine-learning-models-personalised-healthcare-marketable-generative-ai-ethical">Read Publication</a>
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2>Articles</h2>
+            <div>
+                <h3>Decoding the Fashion Deficit: Why Indian Engineering Students Struggle with Style</h3>
+                <a href="https://medium.com/@izharhamdan/decoding-the-fashion-deficit-why-indian-engineering-students-struggle-with-style-c7c3f0a06c39">Read on Medium</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/i-izhar03/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/Izhar03" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="https://x.com/i_izhar03" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/i_izhar03/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

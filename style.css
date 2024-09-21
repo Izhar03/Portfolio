@@ -1,0 +1,140 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #1a202c;
+    --bg-dark: #1e1e1e;
+    --text-dark: #f7fafc;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-light);
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 10;
+}
+
+body.dark-mode header {
+    background-color: var(--bg-dark);
+    border-bottom-color: #2d3748;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Align items at the start */
+    align-items: center; /* Center items vertically */
+    padding: 1rem 0;
+}
+
+nav h1 {
+    margin-right: auto; /* Push the links to the right */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+
+nav ul li button:hover {
+    text-decoration: underline;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 2rem; /* Adds space between the last link and the toggle button */
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .home-content {
+        flex-direction: row;
+    }
+    .home-content > div {
+        flex: 1;
+    }
+}
+
+footer {
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+body.dark-mode footer {
+    border-top-color: #2d3748;
+}
+
+body.dark-mode a {
+    color: #36a5ef; /* Change this to your desired color for dark mode */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: inherit;
+}
